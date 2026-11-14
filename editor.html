@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Törimátrix Editor</title>
+    <style>
+        .field {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .field span {
+            display: block;
+            font-style: italic;
+            margin-bottom: 2px;
+        }
+
+        .field input[type=text], .field textarea {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+            padding: 4px;
+            background-color: rgb(55, 55, 55);
+            color: rgb(235, 235, 235);
+            border: 1px solid rgb(30, 30, 30);
+            outline: none;
+        }
+
+        .field input[type=text]:focus, .field textarea:focus {
+            border-color: rgb(120, 120, 120);
+        }
+
+        .field textarea {
+            height: 300px;
+        }
+
+        .tag-btn {
+            background-color: rgba(0, 0, 0, 0.15);
+            border: none;
+            outline: none;
+            font-size: 14px;
+            margin: 0 4px 6px 0;
+            padding: 3px 8px;
+            cursor: pointer;
+        }
+
+        .tag-btn:hover {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .tag-btn:active {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+        }
+
+        .preview {
+            min-height: 300px;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px dashed rgba(0, 0, 0, 0.5);
+        }
+
+        .edit {
+            display: inline-block;
+            min-width: 20px;
+            outline: none;
+        }
+
+        .edit:focus {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .ev[contenteditable] {
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .x {
+            margin-left: 6px;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .timeline th:hover .x {
+            opacity: 0.6;
+        }
+
+        .timeline th .x:hover {
+            opacity: 1;
+        }
+
+        .timeline .add {
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        .timeline th.add {
+            width: 30px;
+        }
+
+        .timeline .add:hover, .timeline td.plus:hover {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .timeline td.plus {
+            cursor: pointer;
+        }
+
+        .timeline td.sel {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(170, 170, 170);">
+    <div id="main-div">
+        <div id="navbar" class="navbar" style="background-color: rgb(138, 138, 138); margin-bottom: 8px;"></div>
+
+        <div id="dual-cont" class="row">
+            <div id="cont-1" class="box" style="flex: 2; background-color: rgb(138, 138, 138);">
+                <div id="tl"></div>
+            </div>
+            <div id="cont-2" class="box" style="flex: 3; background-color: rgb(138, 138, 138);"></div>
+        </div>
+    </div>
+</body>
+<script src="common.js"></script>
+<script>
+let state = { cols: ["Column 1"], rows: [{ date: "2000", cells: [[]] }] }
+let sel = null
+let mode = "html"
+let editing = null
+
+const TAGS = ["h1", "h2", "h3", "h4", "b", "i", "u"]
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+const curList = () => sel.row.global || sel.row.cells[sel.col]
+const fix = e => ({ title: e.title ?? "", detail: e.detail ?? "" })
+
+let navbarContent = [
+    { text: "Load", onclick: () => pickFile(load) },
+    { text: "Viewer", onclick: () => location.href = "index.html" },
+    { text: "Export", onclick: () => exportJson() },
+]
+
+function load(d) {
+    state = { cols: d.cols.length ? d.cols : ["Column 1"], rows: d.rows }
+    state.rows.forEach(r => {
+        r.date = String(r.date ?? "")
+        if (r.global) r.global = r.global.map(fix)
+        else r.cells = state.cols.map((_, i) => (r.cells?.[i] || []).map(fix))
+    })
+    state.rows.sort((a, b) => dateCmp(a.date, b.date))
+    sel = null
+    renderTable()
+    renderPanel()
+}
+
+function exportJson() {
+    const name = prompt("file name", "topic")
+    if (!name) return
+
+    const a = document.createElement("a")
+    a.href = URL.createObjectURL(new Blob([JSON.stringify({ cols: state.cols, rows: state.rows }, null, 4)], { type: "application/json" }))
+    a.download = name + ".json"
+    a.click()
+}
+
+function wrap(tag) {
+    const ta = get("f-detail")
+    const s = ta.selectionStart
+    const e = ta.selectionEnd
+    const open = `<${tag}>`
+
+    ta.setRangeText(open + ta.value.slice(s, e) + `</${tag}>`, s, e)
+    ta.focus()
+    ta.setSelectionRange(s + open.length, e + open.length)
+    ta.dispatchEvent(new Event("input"))
+}
+
+function renderTable() {
+    const { cols, rows } = state
+
+    const cell = (row, r, c) => {
+        const g = !!row.global
+        const list = g ? row.global : (row.cells[c] || [])
+        const span = g ? cols.length : 1
+
+        if (!list.length) return `<td class="empty plus" colspan="${span}" data-r="${r}" data-c="${c}">+</td>`
+
+        const s = sel && sel.row === row && sel.col === c ? " sel" : ""
+        return `<td class="cell${s}" colspan="${span}" data-r="${r}" data-c="${c}">${list.map(e => `<div class="ev${g ? " global" : ""}">${e.title || "(untitled)"}</div>`).join("")}</td>`
+    }
+
+    let html = `<table class="timeline"><tr><th></th>`
+    html += cols.map((c, i) => `<th><span class="edit" contenteditable="plaintext-only" data-col="${i}">${esc(c)}</span><span class="x" data-delcol="${i}">x</span></th>`).join("")
+    html += `<th class="add" rowspan="${rows.length + 2}" data-add="col">+</th></tr>`
+
+    rows.forEach((row, r) => {
+        html += `<tr><th><span class="edit" contenteditable="plaintext-only" data-date="${r}">${esc(formatDate(row.date))}</span><span class="x" data-delrow="${r}">x</span></th>`
+        html += row.global ? cell(row, r, 0) : cols.map((c, i) => cell(row, r, i)).join("")
+        html += `</tr>`
+    })
+
+    html += `<tr><th class="add" data-add="row">+</th><td class="add" colspan="${cols.length}" data-add="grow">+ global</td></tr></table>`
+    get("tl").innerHTML = html
+}
+
+function renderPanel() {
+    const p = get("cont-2")
+
+    if (!sel) {
+        p.innerHTML = "<p>click a cell to edit it</p>"
+        return
+    }
+
+    const list = curList()
+    const item = list[sel.i]
+
+    const editor = `<div>${TAGS.map(t => `<input type="button" class="tag-btn" data-tag="${t}" value="${t}">`).join("")}</div><div class="field"><textarea id="f-detail"></textarea></div>`
+
+    p.innerHTML = `
+        <div class="date">Date: ${esc(formatDate(sel.row.date))}</div>
+        <div class="tabs">${list.map((x, i) => `<div class="tab${i === sel.i ? " active" : ""}" data-ev="${i}">${x.title || "(untitled)"}</div>`).join("")}<div class="tab" data-new="1">+</div></div>
+        <label class="field"><span>Cell name</span><input type="text" id="f-title"></label>
+        <div class="tabs">
+            <div class="tab${mode === "html" ? " active" : ""}" data-mode="html">HTML</div>
+            <div class="tab${mode === "preview" ? " active" : ""}" data-mode="preview">Preview</div>
+        </div>
+        ${mode === "html" ? editor : `<div class="preview">${item.detail}</div>`}
+        <input type="button" class="basic-btn" id="f-del" value="Delete event">`
+
+    get("f-title").value = item.title
+    get("f-title").oninput = ev => {
+        item.title = ev.target.value
+        document.querySelector(`#cont-2 .tab[data-ev="${sel.i}"]`).innerHTML = item.title || "(untitled)"
+        renderTable()
+    }
+
+    if (mode === "html") {
+        get("f-detail").value = item.detail
+        get("f-detail").oninput = ev => item.detail = ev.target.value
+    }
+}
+
+get("tl").onclick = e => {
+    const add = e.target.closest("[data-add]")
+    const dr = e.target.closest("[data-delrow]")
+    const dc = e.target.closest("[data-delcol]")
+    const td = e.target.closest("td[data-r]")
+
+    if (add) {
+        const k = add.dataset.add
+        if (k === "col") {
+            state.cols.push("Column " + (state.cols.length + 1))
+            state.rows.forEach(r => { if (!r.global) r.cells.push([]) })
+        } else {
+            const date = state.rows.length ? state.rows[state.rows.length - 1].date : "2000"
+            state.rows.push(k === "row" ? { date, cells: state.cols.map(() => []) } : { date, global: [] })
+        }
+    } else if (dr) {
+        const [row] = state.rows.splice(dr.dataset.delrow, 1)
+        if (sel && sel.row === row) sel = null
+    } else if (dc) {
+        if (state.cols.length < 2) return
+        state.cols.splice(dc.dataset.delcol, 1)
+        state.rows.forEach(r => { if (!r.global) r.cells.splice(dc.dataset.delcol, 1) })
+        sel = null
+    } else if (td) {
+        const row = state.rows[td.dataset.r]
+        const col = Number(td.dataset.c)
+        const list = row.global || row.cells[col]
+        const fresh = !list.length
+        if (fresh) list.push({ title: "New event", detail: "" })
+
+        const evEl = e.target.closest(".ev")
+        sel = { row, col, i: Math.max(0, [...td.querySelectorAll(".ev")].indexOf(evEl)) }
+
+        if (!fresh) {
+            get("tl").querySelectorAll("td.sel").forEach(x => x.classList.remove("sel"))
+            td.classList.add("sel")
+            renderPanel()
+            return
+        }
+    } else {
+        return
+    }
+
+    renderTable()
+    renderPanel()
+}
+
+get("tl").addEventListener("focusin", e => {
+    const t = e.target
+    if (!t.classList.contains("edit")) return
+
+    if (t.dataset.date !== undefined) t.textContent = state.rows[t.dataset.date].date
+
+    setTimeout(() => {
+        const r = document.createRange()
+        r.selectNodeContents(t)
+        getSelection().removeAllRanges()
+        getSelection().addRange(r)
+    }, 0)
+})
+
+get("tl").addEventListener("keydown", e => {
+    if (e.key === "Enter" && e.target.isContentEditable) {
+        e.preventDefault()
+        e.target.blur()
+    }
+})
+
+get("tl").addEventListener("dblclick", e => {
+    const td = e.target.closest("td.cell")
+    if (!td || !sel) return
+
+    const el = td.querySelectorAll(".ev")[sel.i]
+    editing = curList()[sel.i]
+
+    el.textContent = editing.title
+    el.contentEditable = "plaintext-only"
+    el.focus()
+
+    const r = document.createRange()
+    r.selectNodeContents(el)
+    getSelection().removeAllRanges()
+    getSelection().addRange(r)
+})
+
+get("tl").addEventListener("focusout", e => {
+    const t = e.target
+
+    if (t.dataset.date !== undefined) {
+        const row = state.rows[t.dataset.date]
+        row.date = t.textContent.trim() || row.date
+
+        const sorted = state.rows.slice().sort((a, b) => dateCmp(a.date, b.date))
+        if (sorted.some((r, i) => r !== state.rows[i])) {
+            state.rows = sorted
+            renderTable()
+        } else {
+            t.textContent = formatDate(row.date)
+        }
+
+        const d = document.querySelector("#cont-2 .date")
+        if (d && sel) d.textContent = "Date: " + formatDate(sel.row.date)
+    } else if (t.dataset.col !== undefined) {
+        state.cols[t.dataset.col] = t.textContent.trim() || state.cols[t.dataset.col]
+        t.textContent = state.cols[t.dataset.col]
+    } else if (t.classList.contains("ev") && editing) {
+        editing.title = t.textContent.trim() || editing.title
+        t.removeAttribute("contenteditable")
+        t.innerHTML = editing.title || "(untitled)"
+
+        const inp = get("f-title")
+        if (inp) inp.value = editing.title
+
+        const tab = document.querySelector(`#cont-2 .tab[data-ev="${sel.i}"]`)
+        if (tab) tab.innerHTML = editing.title || "(untitled)"
+
+        editing = null
+    }
+})
+
+get("cont-2").onclick = e => {
+    if (!sel) return
+    const t = e.target
+    const tab = t.closest(".tab")
+    const tb = t.closest("[data-tag]")
+
+    if (tb) {
+        wrap(tb.dataset.tag)
+        return
+    }
+
+    if (tab && tab.dataset.ev !== undefined) {
+        sel.i = Number(tab.dataset.ev)
+    } else if (tab && tab.dataset.mode) {
+        mode = tab.dataset.mode
+    } else if (tab) {
+        curList().push({ title: "New event", detail: "" })
+        sel.i = curList().length - 1
+    } else if (t.id === "f-del") {
+        const list = curList()
+        list.splice(sel.i, 1)
+        if (list.length) sel.i = Math.max(0, sel.i - 1)
+        else sel = null
+    } else {
+        return
+    }
+
+    renderTable()
+    renderPanel()
+}
+
+window.addEventListener("pagehide", () => saveData(state))
+
+genNavbar(navbarContent)
+
+const saved = loadData()
+if (saved) {
+    load(saved)
+} else {
+    renderTable()
+    renderPanel()
+}
+</script>
+</html>

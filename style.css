@@ -1,0 +1,122 @@
+body, input, button, textarea, select {
+    font-family: Arial, sans-serif;
+}
+
+.basic-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    padding: 5px;
+}
+
+.basic-btn:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-style: normal;
+}
+
+.basic-btn:active {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-style: normal;
+}
+
+.navbar {
+    height: auto;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.box {
+  flex: 1;
+}
+
+.timeline {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.timeline th, .timeline td {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.timeline th {
+    white-space: nowrap;
+}
+
+.timeline td.cell {
+    cursor: pointer;
+}
+
+.timeline td.cell:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.timeline td.empty {
+    opacity: 0.4;
+}
+
+.ev {
+    padding: 2px 0;
+}
+
+.ev.global {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.ev.global::before, .ev.global::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.date {
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 5px 12px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-style: normal;
+}
+
+.tab.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-style: normal;
+}
+
+#cont-2 {
+    padding: 10px;
+}
