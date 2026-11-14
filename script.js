@@ -14,7 +14,7 @@ async function showDatabase() {
 
         p.onclick = async e => {
             const n = e.target.dataset.n
-            if (n) loadTopic(normalize(await (await fetch(`topic/${n}.json`)).json()))
+            if (n) loadTopic(normalize(await (await fetch(`topics/${n}.json`)).json()))
         }
     } catch (e) {
         p.innerHTML = "<h2>cant load database</h2><p>" + e.message + "</p>"
