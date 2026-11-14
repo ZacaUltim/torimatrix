@@ -1,5 +1,5 @@
 const fs = require("fs")
-const dir = "topic"
+const dir = "topics"
 
 const names = fs.readdirSync(dir)
     .filter(f => f.endsWith(".json") && f !== "topics.json")

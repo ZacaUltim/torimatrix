@@ -9,7 +9,7 @@ async function showDatabase() {
     p.onclick = null
 
     try {
-        const names = await (await fetch("topic/topics.json")).json()
+        const names = await (await fetch("topics/topics.json")).json()
         p.innerHTML = `<div class="date">Database</div>` + names.map(n => `<input type="button" class="basic-btn" data-n="${n}" value="${n}">`).join("<br>")
 
         p.onclick = async e => {
