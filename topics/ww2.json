@@ -1,0 +1,22 @@
+{
+    "cols": ["Europe", "Pacific", "Africa and Middle East"],
+    "rows": [
+        { "date": "1939-09-01", "global": [{ "title": "Germany invades Poland", "detail": "<h1>Germany invades Poland</h1><p>The invasion starts the war. Britain and France declare war on Germany two days later.</p>" }] },
+        { "date": "1940-05-10", "cells": [[{ "title": "Invasion of France", "detail": "<h1>Invasion of France</h1><p>Germany attacks France and the Low Countries, going around the Maginot Line through the Ardennes.</p>" }], [], []] },
+        { "date": "1940-06-22", "cells": [[{ "title": "France signs armistice", "detail": "<h1>French armistice</h1><p>France surrenders and the north and west come under German occupation.</p>" }], [], []] },
+        { "date": "1940-07-10", "cells": [[{ "title": "Battle of Britain begins", "detail": "<h1>Battle of Britain</h1><p>The RAF defends Britain against the German air force, which fails to win control of the skies.</p>" }], [], []] },
+        { "date": "1941-06-22", "cells": [[{ "title": "Operation Barbarossa", "detail": "<h1>Operation Barbarossa</h1><p>Germany invades the Soviet Union, opening the largest front of the war.</p>" }], [], []] },
+        { "date": "1941-12-07", "cells": [[], [{ "title": "Pearl Harbor", "detail": "<h1>Pearl Harbor</h1><p>Japan attacks the US Pacific Fleet in Hawaii and the United States enters the war.</p>" }], []] },
+        { "date": "1942-06-04", "cells": [[], [{ "title": "Battle of Midway", "detail": "<h1>Battle of Midway</h1><p>The US sinks four Japanese aircraft carriers, a turning point in the Pacific.</p>" }], []] },
+        { "date": "1942-08-23", "cells": [[{ "title": "Battle of Stalingrad begins", "detail": "<h1>Battle of Stalingrad</h1><p>German forces reach the Volga and start the brutal fight for the city.</p>" }], [], []] },
+        { "date": "1942-10-23", "cells": [[], [], [{ "title": "Second El Alamein", "detail": "<h1>Second Battle of El Alamein</h1><p>British forces under <b>Montgomery</b> defeat Rommel's army and push the Axis out of Egypt.</p>" }]] },
+        { "date": "1943-02-02", "cells": [[{ "title": "Stalingrad surrender", "detail": "<h1>Stalingrad surrender</h1><p>The German Sixth Army surrenders, the first great German defeat.</p>" }], [], []] },
+        { "date": "1943-05-13", "cells": [[], [], [{ "title": "Axis surrenders in Tunisia", "detail": "<h1>End of the North Africa campaign</h1><p>About 250,000 Axis troops surrender, clearing the way for the invasion of Italy.</p>" }]] },
+        { "date": "1944-06-06", "cells": [[{ "title": "D-Day", "detail": "<h1>D-Day</h1><p>Allied forces land on the beaches of Normandy, the largest seaborne invasion in history.</p>" }], [], []] },
+        { "date": "1944-10-23", "cells": [[], [{ "title": "Battle of Leyte Gulf", "detail": "<h1>Battle of Leyte Gulf</h1><p>The largest naval battle of the war cripples what is left of the Japanese fleet.</p>" }], []] },
+        { "date": "1945-05-08", "cells": [[{ "title": "VE Day", "detail": "<h1>Victory in Europe</h1><p>Germany's unconditional surrender takes effect, ending the war in Europe.</p>" }], [], []] },
+        { "date": "1945-08-06", "cells": [[], [{ "title": "Hiroshima", "detail": "<h1>Hiroshima</h1><p>The United States drops an atomic bomb on the city.</p>" }], []] },
+        { "date": "1945-08-09", "cells": [[], [{ "title": "Nagasaki", "detail": "<h1>Nagasaki</h1><p>A second atomic bomb is dropped. The same day the Soviet Union invades Japanese-held Manchuria.</p>" }], []] },
+        { "date": "1945-09-02", "global": [{ "title": "Japan surrenders", "detail": "<h1>Japan surrenders</h1><p>The surrender is signed aboard the USS Missouri in Tokyo Bay, ending the Second World War.</p>" }] }
+    ]
+}

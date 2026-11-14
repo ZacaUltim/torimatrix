@@ -1,0 +1,27 @@
+{
+    "cols": ["Politics", "Monuments", "Outside world"],
+    "rows": [
+        { "date": "-3100", "cells": [[{ "title": "Egypt unified", "detail": "<h1>Egypt unified</h1><p>Around this time <b>Narmer</b> (traditionally Menes) unites Upper and Lower Egypt and founds the first dynasty.</p>" }], [], []] },
+        { "date": "-2630", "cells": [[], [{ "title": "Step Pyramid", "detail": "<h1>Step Pyramid of Djoser</h1><p>Designed by <b>Imhotep</b> at Saqqara, it is the first large stone building in Egypt.</p>" }], []] },
+        { "date": "-2560", "cells": [[], [{ "title": "Great Pyramid", "detail": "<h1>Great Pyramid of Giza</h1><p>Built for <b>Khufu</b>. It was the tallest man-made structure for almost 4000 years.</p>" }], []] },
+        { "date": "-2181", "cells": [[{ "title": "Old Kingdom collapses", "detail": "<h1>Old Kingdom collapses</h1><p>Central power breaks down and the First Intermediate Period begins.</p>" }], [], []] },
+        { "date": "-2055", "cells": [[{ "title": "Middle Kingdom", "detail": "<h1>Middle Kingdom</h1><p><b>Mentuhotep II</b> reunites Egypt under rulers from Thebes.</p>" }], [], []] },
+        { "date": "-1650", "cells": [[], [], [{ "title": "Hyksos rule", "detail": "<h1>Hyksos rule</h1><p>Foreign rulers from the Levant take control of northern Egypt and introduce horses and chariots.</p>" }]] },
+        { "date": "-1550", "cells": [[
+            { "title": "Hyksos expelled", "detail": "<h1>Hyksos expelled</h1><p><b>Ahmose I</b> drives out the Hyksos and reunites the country.</p>" },
+            { "title": "New Kingdom begins", "detail": "<h1>New Kingdom begins</h1><p>The height of Egyptian power and wealth, with the great temples and the Valley of the Kings.</p>" }
+        ], [], []] },
+        { "date": "-1479", "cells": [[{ "title": "Hatshepsut", "detail": "<h1>Hatshepsut</h1><p>Rules as pharaoh and sends a famous trading expedition to the land of Punt.</p>" }], [], []] },
+        { "date": "-1353", "cells": [[{ "title": "Akhenaten", "detail": "<h1>Akhenaten</h1><p>Replaces the old gods with the worship of the sun disc <b>Aten</b> and builds a new capital at Amarna.</p>" }], [], []] },
+        { "date": "-1274", "cells": [[], [], [{ "title": "Battle of Kadesh", "detail": "<h1>Battle of Kadesh</h1><p><b>Ramesses II</b> fights the Hittites in one of the largest chariot battles ever recorded.</p>" }]] },
+        { "date": "-1264", "cells": [[], [{ "title": "Abu Simbel", "detail": "<h1>Abu Simbel</h1><p>Ramesses II starts building the two rock temples in the south, guarded by four huge seated statues.</p>" }], []] },
+        { "date": "-525", "cells": [[], [], [{ "title": "Persian conquest", "detail": "<h1>Persian conquest</h1><p><b>Cambyses II</b> defeats the Egyptians and Egypt becomes part of the Persian Empire.</p>" }]] },
+        { "date": "-332", "cells": [[], [], [{ "title": "Alexander arrives", "detail": "<h1>Alexander the Great</h1><p>Alexander conquers Egypt without a fight and founds the city of Alexandria.</p>" }]] },
+        { "date": "-305", "cells": [[{ "title": "Ptolemaic dynasty", "detail": "<h1>Ptolemaic dynasty</h1><p>Alexander's general <b>Ptolemy I</b> declares himself king. His Greek dynasty rules for almost three centuries.</p>" }], [], []] },
+        { "date": "-196-03-27", "cells": [[], [{ "title": "Rosetta decree", "detail": "<h1>The Rosetta decree</h1><p>A decree for <b>Ptolemy V</b> is carved in hieroglyphic, Demotic and Greek. The stone becomes the key to reading hieroglyphs.</p>" }], []] },
+        { "date": "-30", "global": [{ "title": "Cleopatra dies, Egypt becomes Roman", "detail": "<h1>End of the pharaohs</h1><p>After her defeat by Octavian, <b>Cleopatra VII</b> takes her own life and Egypt becomes a province of Rome.</p>" }] },
+        { "date": "1799-07", "cells": [[], [{ "title": "Rosetta Stone found", "detail": "<h1>Rosetta Stone found</h1><p>French soldiers of Napoleon's expedition find the stone near the town of Rashid (Rosetta).</p>" }], []] },
+        { "date": "1822-09-27", "cells": [[], [], [{ "title": "Hieroglyphs deciphered", "detail": "<h1>Hieroglyphs deciphered</h1><p><b>Jean-Francois Champollion</b> announces that he has cracked the hieroglyphic script.</p>" }]] },
+        { "date": "1922-11-04", "cells": [[], [{ "title": "Tutankhamun's tomb", "detail": "<h1>Tutankhamun's tomb</h1><p><b>Howard Carter</b>'s team finds the entrance to the almost untouched tomb in the Valley of the Kings.</p>" }], []] }
+    ]
+}
