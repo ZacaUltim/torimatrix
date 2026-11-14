@@ -2,7 +2,7 @@ name: update topic index
 on:
   push:
     paths:
-      - "topic/**"
+      - "topics/**"
 permissions:
   contents: write
 jobs:
