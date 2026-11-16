@@ -1,0 +1,116 @@
+{
+    "cols": ["Politika", "Forradalom és harcok", "Külföld és szovjetek"],
+    "rows": [
+        { "date": "1953", "cells": [
+            [{ "title": "Nagy Imre miniszterelnök (1953-55)", "detail": "<h1>Nagy Imre miniszterelnök</h1><p>Sztálin halála után Rákosit leváltották a kormány éléről, de a párt élén maradhatott. Enyhülési politika kezdődött, Rákosi Nagy Imrét nevezte ki miniszterelnöknek (1953-55).</p><p>Nagy Imre csökkentette a nehézipari beruházásokat, támogatta a mezőgazdaságot, ami növelte az életszínvonalat. Felülvizsgáltatta a koncepciós pereket, felszámolta az internáló táborokat és a recski büntetőtábort.</p>" }],
+            [],
+            [{ "title": "Sztálin meghal", "detail": "<h1>Sztálin halála</h1><p>Sztálin 1953-ban meghalt, utána Hruscsov lett a főtitkár. Kritizálta Rákosi személyi kultuszát, ami az enyhülési politika kezdetét hozta.</p>" }]
+        ] },
+        { "date": "1955", "cells": [
+            [{ "title": "Nagy Imre leváltása", "detail": "<h1>Nagy Imre leváltása</h1><p>A hidegháborús ellentétek újra kiéleződtek (az NSZK-t felvették a NATO-ba), ezért az enyhülést szigorítások követték. Nagy Imrét leváltották, a Minisztertanács elnöke Hegedűs András lett.</p><p>Rákosit megerősítették a pozíciójában, mert a Szovjetunió „kemény kéz politikát” követelt.</p>" }],
+            [],
+            [
+                { "title": "Osztrák államszerződés", "detail": "<h1>Osztrák államszerződés</h1><p>Ausztria semlegessé vált, ezért kivonultak az amerikai és szovjet csapatok az országból. Magyarországon is reménykedtek az emberek, hogy a szovjet csapatokat innen is kivonják.</p>" },
+                { "title": "Varsói Szerződés", "detail": "<h1>Varsói Szerződés</h1><p>A Szovjetunió megkötötte a szerződést a szocialista országokkal. Alapokmánya szerint a szovjet blokkba tartozó országok csapatai ideiglenesen állomásozhatnak egymás országaiban.</p><p>A szerződésnek ez a pontja hatalmazta fel a Szovjetuniót, hogy a szocialista országok területén továbbra is katonailag jelen legyen.</p>" }
+            ]
+        ] },
+        { "date": "1956", "cells": [
+            [{ "title": "Gerő Ernő a párt élén", "detail": "<h1>Rákosi leváltása</h1><p>A diktatúra fokozása miatt kialakult elégedetlenség hatására Rákosit leváltották, helyette Gerő Ernőt nevezték ki.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1956-10-06", "cells": [
+            [],
+            [{ "title": "Rajk László újratemetése", "detail": "<h1>Rajk László újratemetése</h1><p>Rajk Lászlót újra eltemették. A temetés kétszázezer ember néma tüntetése volt a Rákosi-diktatúrával szemben.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-16", "cells": [
+            [],
+            [{ "title": "MEFESZ és a 16 pont", "detail": "<h1>A MEFESZ megalakulása</h1><p>Megalakult a MEFESZ (Magyar Egyetemi és Főiskolai Egyesületek Szövetsége). 16 pontos programot fogalmaztak meg.</p><h2>Követeléseik</h2><p>Többpártrendszeren alapuló demokrácia, nemzeti függetlenség, a szovjet csapatok kivonása („Ruszkik haza”), új választások, a magyar nemzeti jelképek és ünnepek visszaállítása.</p><p>A fiatal kommunista értelmiség a Petőfi Körben tömörült, ők szintén támogatták a MEFESZ 16 pontját.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-23", "global": [{ "title": "Kitör a forradalom", "detail": "<h1>A forradalom kitörése</h1><p>Budapesten a Petőfi szobornál gyülekeztek a tüntetők, majd a Parlament elé vonultak. A forradalom jelképe a lyukas zászló lett: a nemzeti lobogóból kivágták a kalapácsot és búzakalászt ábrázoló címert a vörös ötágú csillaggal együtt.</p><p>Követelték, hogy Nagy Imrét újra nevezzék ki miniszterelnöknek, de Nagy Imre a Parlament előtt rendre és fegyelemre szólította fel a tömeget.</p>" }] },
+        { "date": "1956-10-23", "cells": [
+            [],
+            [
+                { "title": "Rádió ostroma", "detail": "<h1>A rádió ostroma</h1><p>A forradalmárok egyik csoportja a rádió épületéhez vonult, hogy beolvassák a 16 pontot, de az ÁVH ezt fegyverrel megakadályozta.</p>" },
+                { "title": "Sztálin-szobor ledöntése", "detail": "<h1>A Sztálin-szobor ledöntése</h1><p>A másik csoport a Városligetben ledöntötte a Sztálin-szobrot, a diktatúra jelképét.</p>" }
+            ],
+            []
+        ] },
+        { "date": "1956-10-24", "cells": [
+            [{ "title": "Megalakul a Nagy Imre-kormány", "detail": "<h1>A Nagy Imre-kormány megalakulása</h1><p>Október 24-én megalakult a Nagy Imre-kormány.</p>" }],
+            [{ "title": "Fegyveres ellenállás", "detail": "<h1>Fegyveres ellenállás</h1><p>A Gerő Ernő által ellenforradalmároknak nevezett forradalmárok fegyveresen is felvették a harcot a szovjet tankokkal. A gyárakban munkástanácsok alakultak, vidéken forradalmi bizottságok jöttek létre.</p><p>A nyugati világ szimpátiával kísérte a magyar forradalmárok küzdelmét, amely a demokráciáért és a függetlenségért folyt.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-25", "cells": [
+            [{ "title": "Kádár János a párt vezetője", "detail": "<h1>Gerő leváltása</h1><p>Gerő Ernőt leváltották, és Kádár János lett a párt vezetője.</p>" }],
+            [
+                { "title": "Sortűz a Parlament előtt", "detail": "<h1>Sortűz a Parlament előtt</h1><p>A Parlament épülete előtt a fegyvertelen tömegbe lőttek, feltehetően az ÁVH-s katonák (150 halott).</p><p>A forradalmárok leverték a vörös csillagokat a középületekről, és hajtóvadászatot indítottak az ÁVH-sok és a kommunista funkcionáriusok ellen.</p>" },
+                { "title": "Maléter Pál átáll", "detail": "<h1>Maléter Pál átáll</h1><p>Maléter Pál, a Kilián laktanya vezetője is átállt a forradalmárok oldalára.</p>" }
+            ],
+            []
+        ] },
+        { "date": "1956-10-26", "cells": [
+            [],
+            [{ "title": "Mosonmagyaróvári sortűz", "detail": "<h1>Mosonmagyaróvári sortűz</h1><p>Itt is fegyvertelen munkások estek áldozatul.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-27", "cells": [
+            [],
+            [{ "title": "Megkezdődik a szabadságharc", "detail": "<h1>A szabadságharc kezdete</h1><p>Budapest utcáin folytatódtak a fegyveres harcok, amelyeket a szovjet tankok sem tudtak leverni.</p><p>A fővárosi felkelő központok: a Tűzoltó utca, a Corvin-köz, Pongrátz Gergely vezetésével. A harcokban nagy számban vettek részt tizenéves fiúk, akiket „pesti srácoknak” neveztek.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-28", "cells": [
+            [{ "title": "Megállapodás a szovjet kivonásról", "detail": "<h1>Megállapodás a szovjet csapatok kivonásáról</h1><p>A Nagy Imre-kormány megállapodást kötött a szovjet csapatok kivonásáról. Döntöttek a többpárti választásról és a demokrácia helyreállításáról.</p><p>A felkelők a forradalom győzelmét ünnepelték.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1956-10-29", "cells": [
+            [],
+            [{ "title": "ÁVH lefegyverzése", "detail": "<h1>Az ÁVH lefegyverzése</h1><p>A forradalmárok lefegyverezték az ÁVH-t.</p>" }],
+            [{ "title": "Szuezi válság, az ENSZ hallgat", "detail": "<h1>Szuezi válság</h1><p>Kitört a szuezi válság, ezért az ENSZ és a nyugati világ figyelme elfordult a magyar eseményektől. Az ENSZ közgyűlése a magyar forradalmat belügynek minősítette, ami szabad kezet adott a Szovjetuniónak.</p><p>Ez azt jelentette, hogy nem jön az ENSZ és a NATO segíteni a forradalmároknak. Ezért a szovjet vezetés intervenciós csapatokat indított Magyarország ellen, mert az itt állomásozó szovjet katonák nem tudták leverni a forradalmat.</p>" }]
+        ] },
+        { "date": "1956-10-30", "cells": [
+            [{ "title": "Koalíciós kormány", "detail": "<h1>Koalíciós kormány</h1><p>Nagy Imre kormánya koalíciós kormánnyá alakult.</p>" }],
+            [{ "title": "Mindszenty kiszabadítása", "detail": "<h1>Mindszenty kiszabadítása</h1><p>A forradalmárok kiszabadították Mindszenty hercegprímást.</p>" }],
+            []
+        ] },
+        { "date": "1956-10-31", "cells": [
+            [],
+            [],
+            [{ "title": "Szovjet csapatok a határon", "detail": "<h1>Szovjet csapatok átlépik a határt</h1><p>Záhonynál kétszázezer szovjet katona lépett át a magyar határt Kádár János kérésére.</p>" }]
+        ] },
+        { "date": "1956-11-01", "cells": [
+            [
+                { "title": "Kilépés a Varsói Szerződésből", "detail": "<h1>Kilépés a Varsói Szerződésből</h1><p>Nagy Imre bejelentette, hogy Magyarország kilép a Varsói Szerződésből.</p>" },
+                { "title": "Megalakul az MSZMP", "detail": "<h1>Az MSZMP megalakulása</h1><p>Kádár János vezetésével megalakult az MSZMP (Magyar Szocialista Munkáspárt).</p>" }
+            ],
+            [],
+            []
+        ] },
+        { "date": "1956-11-02", "cells": [
+            [{ "title": "Új kormány Szolnokon (nov. 2-4.)", "detail": "<h1>Az új kormány előkészítése</h1><p>November 2-4. között Kádár János és Münnich Ferenc a szovjetekkel Szolnokon előkészítette az új kormány megalakulását.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1956-11-03", "cells": [
+            [{ "title": "Tökölyi tárgyalás, Maléter letartóztatása", "detail": "<h1>Tárgyalás Tökölön</h1><p>A magyar kormány nevében Maléter Pál honvédelmi miniszter tárgyalt a szovjetekkel Tökölön a szovjet csapatok kivonásáról.</p><p>A szovjetek Maléter Pált elfogták és letartóztatták.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1956-11-04", "global": [{ "title": "A forradalom leverése", "detail": "<h1>A forradalom leverése</h1><p>A szovjet csapatok újabb támadást indítottak („Forgószél hadművelet”). A túlerővel szemben esélytelen volt a forradalom győzelme.</p><p>A forradalom leverése után Nagy Imrét és családját Romániába hurcolták és tartották fogva.</p>" }] },
+        { "date": "1956-11-04", "cells": [
+            [
+                { "title": "Forradalmi Munkás-Paraszt Kormány", "detail": "<h1>Forradalmi Munkás-Paraszt Kormány</h1><p>Megalakult a Forradalmi Munkás-Paraszt Kormány, Kádár János vezetésével.</p>" },
+                { "title": "Nagy Imre rádióbeszéde", "detail": "<h1>Nagy Imre rádióbeszéde</h1><p>Nagy Imre hajnali rádióbeszédében bejelentette az inváziót, és biztosította az országot, hogy a kormány a helyén van.</p>" },
+                { "title": "Menedék a követségeken", "detail": "<h1>Menedék a követségeken</h1><p>Az Amerikai Egyesült Államok magyarországi nagykövetsége menedéket ajánlott Nagy Imrének és Mindszenty hercegprímásnak.</p><p>Nagy Imre nem az amerikai, hanem a jugoszláv nagykövetségre menekült.</p>" }
+            ],
+            [],
+            [
+                { "title": "Forgószél hadművelet", "detail": "<h1>Forgószél hadművelet</h1><p>A szovjet csapatok Kádár János kérésére újabb támadást indítottak Magyarország ellen.</p>" },
+                { "title": "Bibó István az ENSZ-hez fordul", "detail": "<h1>Bibó István felhívása</h1><p>Bibó István, a Nagy Imre-kormány államminisztere az ENSZ-hez fordult segítségért a magyar nép szabadsága érdekében.</p>" }
+            ]
+        ] }
+    ]
+}
