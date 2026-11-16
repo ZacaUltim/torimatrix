@@ -1,0 +1,59 @@
+{
+    "cols": ["Politika", "Gazdaság", "Társadalom"],
+    "rows": [
+        { "date": "1956-12", "cells": [
+            [{ "title": "Ellenforradalom, megtorlás", "detail": "<h1>Megtorlás</h1><p>Az MSZMP 1956. decemberi pártértekezlete ellenforradalomnak minősítette a forradalmat. Közel háromszáz főt végeztek ki, és tizenhatezer ember került börtönbe.</p><p>Az országot körülbelül kétszázezren hagyták el (disszidáltak). A magyar aranycsapat legtöbb tagja is disszidált.</p><p>A megtorlást segítették a pufajkások (karhatalom) és a megalakult munkásőrség.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1956-12-08", "cells": [
+            [{ "title": "Salgótarjáni sortűz", "detail": "<h1>Salgótarján</h1><p>A megtorlások elleni tüntetőkbe lőttek, aminek következtében 46-an vesztették életüket.</p>" }],
+            [],
+            []
+        ] },
+        { "date": "1958", "cells": [
+            [{ "title": "Nagy Imre halálos ítélete", "detail": "<h1>Nagy Imre és társai</h1><p>Zárt tárgyaláson halálra ítélték Nagy Imrét és társait, Maléter Pált és Gimes Miklóst a forradalom vezetésében való részvételükért.</p>" }],
+            [],
+            [{ "title": "Kommunista nevelés", "detail": "<h1>Kommunista nevelés</h1><p>Félve egy újabb forradalom kirobbanásától a fiatalokat kommunista nevelésbe kényszerítették, amely a párt ideológiáját közvetítette.</p><p>Az általános iskolások nevelését a kisdobos- és úttörőmozgalom, a középiskolásokat és egyetemistákat a KISZ (Kommunista Ifjúsági Szövetség) irányította.</p>" }]
+        ] },
+        { "date": "1961", "cells": [
+            [],
+            [{ "title": "Befejeződik a kollektivizálás", "detail": "<h1>A mezőgazdaság átszervezése</h1><p>1961-re befejeződött az erőszakos kollektivizálás. A téeszesítést azzal indokolták, hogy a nagyüzemekben fokozni lehet a termelést, a gépek által felszabadult munkaerő pedig az iparnak biztosított munkásokat.</p><p>A parasztok kedvezményeket kaptak, engedélyezték a háztáji gazdálkodást. Munkaidőn túl zöldséget, gyümölcsöt termeltek, állatokat tartottak, amelyeket adófizetési kötelezettség nélkül a piacon értékesíthettek.</p><p>Ezzel javult az élelmiszerellátás, a parasztok érdekeltté váltak a termelésben, és többletjövedelemhez jutottak.</p>" }],
+            []
+        ] },
+        { "date": "1963", "cells": [
+            [
+                { "title": "Amnesztia, puha diktatúra", "detail": "<h1>Amnesztia és puha diktatúra</h1><p>Kádár 1963-ban amnesztiát hirdetett, ezért az ENSZ levette napirendről a magyar kérdést. Megkezdődött a puha diktatúra (1963-1989).</p><p>A párt háttérbe szorította a sztálinista politikusokat, de a megfigyelés és a besúgóhálózat továbbra is működött.</p>" },
+                { "title": "Kádári alku", "detail": "<h1>Kádári alku</h1><p>Rákosi jelszavát („Aki nincs velünk, az ellenünk”) Kádár megváltoztatta: „Aki nincs ellenünk, az velünk”.</p><p>Újabb forradalomtól félve a párt az életszínvonal növelését tűzte ki célul, ami segítette, hogy a társadalom elfogadja a diktatúrát („Kádári alku”). Ha nem kritizálják a párt politikáját, nem éri őket atrocitás, zaklatás („élni és élni hagyni”).</p>" }
+            ],
+            [],
+            [{ "title": "Kirakatország", "detail": "<h1>Kirakatország</h1><p>Magyarország a szocialista táboron belül kirakatország lett, ezzel akarták bizonyítani a nyugatnak, hogy a szocializmus élhető. Magyarországot a „legvidámabb barakknak” nevezték.</p>" }]
+        ] },
+        { "date": "1968", "cells": [
+            [],
+            [
+                { "title": "Új gazdasági mechanizmus", "detail": "<h1>Új gazdasági mechanizmus</h1><p>1968-ban bevezették az „új gazdasági mechanizmust”, amelynek voltak piacgazdasági elemei is (egy-két főt alkalmazó magánvállalkozások működhettek). Ezzel fokozni akarták a termelést.</p><p>Maradt a kötött ár az alapvető élelmiszereknél (3,60 Ft-os kenyér).</p>" },
+                { "title": "Tervgazdálkodás", "detail": "<h1>Tervutasítás helyett tervgazdálkodás</h1><p>A tervutasítást felváltotta a tervgazdálkodás: a gyárak és a termelőszövetkezetek maguk készíthették a terveket, így azok reálisabbak voltak.</p><p>A változásokat Fock Jenő és Nyers Rezső dolgozta ki. A nehézipar fejlesztése továbbra is dominált, de gépesítették a mezőgazdaságot is.</p>" }
+            ],
+            []
+        ] },
+        { "date": "1970", "cells": [
+            [{ "title": "Ideológiai vita az MSZMP-ben", "detail": "<h1>Ideológiai vita</h1><p>Az MSZMP-n belül is ideológiai vita alakult ki, mert több párttag a kapitalizmus újraéledésétől tartott.</p>" }],
+            [{ "title": "Leállítják az új mechanizmust", "detail": "<h1>Az új gazdasági mechanizmus leállítása</h1><p>Az 1970-es évek elején szovjet utasításra (Brezsnyev) leállították az új gazdasági mechanizmust.</p>" }],
+            []
+        ] },
+        { "date": "1963-1989", "cells": [
+            [{ "title": "Besúgórendszer", "detail": "<h1>Megfigyelés és besúgók</h1><p>A Kádár-korszakban nem változott az ideológia és a politikai rendszer, de a Rákosi Mátyáséhoz hasonló személyi kultusz nem folytatódott.</p><p>A besúgó- és ügynökrendszer azonban továbbra is működött: a III/III-as ügyosztály ügynökei jelentéseket készítettek a megfigyelt személyekről.</p>" }],
+            [
+                { "title": "Maszekok és magánvállalkozók", "detail": "<h1>Maszekok</h1><p>A kisszámú magánvállalkozók (maszekok) adót fizettek, főleg a szolgáltató iparban vagy a kereskedelemben dolgoztak (cipész, lángossütő, butikos). Jövedelmük az 1970-es évekre átlag felettivé vált.</p>" },
+                { "title": "Másodállás, fusizás", "detail": "<h1>Másodállás és fusizás</h1><p>Az életszínvonal növekedéséhez hozzájárult, hogy az emberek egy része másodállást vállalt. Munkaidőn túl fusizott, maszekolt, sok esetben a gyár gépeit, nyersanyagát is használva.</p><p>A büntetőtörvénykönyv ezt lopásnak minősítette, de a legtöbb esetben „szemet hunyt” ezek felett.</p>" }
+            ],
+            [
+                { "title": "Fridzsider szocializmus", "detail": "<h1>Fridzsider szocializmus, gulyáskommunizmus</h1><p>A tartós fogyasztási cikkek elérhető áron kerültek az üzletekbe, a háztartásokban megjelent a fridzsider, a porszívó, a televízió, elérhetővé vált az autó („fridzsider szocializmus”).</p><p>Nőtt a lakosság fogyasztása, megszűnt a hiánygazdaság, javult az élelmiszerellátás („gulyáskommunizmus”).</p>" },
+                { "title": "Panelprogram, Kádár-kocka", "detail": "<h1>Lakásépítés</h1><p>Az urbanizáció következménye volt, hogy a kormány lakásépítési programba kezdett, amelynek eredményei a házgyári elemekből épülő lakótelepek lettek (panelprogram).</p><p>A vidéki házak építését is támogatták. Ekkor épültek „kalákába” a sátortetős kocka házak, vagyis a rokonok és barátok segítettek a ház felépítésében („Kádár-kocka”).</p>" },
+                { "title": "Társadalmi változások", "detail": "<h1>Társadalmi változások</h1><p>Az ipar fejlesztése magával hozta az urbanizációt, de sok vidéki munkás faluról járt be dolgozni a városokba (ingázók). A mezőgazdasági dolgozókra kiterjesztett társadalombiztosítás és a szakszervezeti üdültetés növelte az elégedettséget.</p><p>Az 1950-es évekig meghatározó vezető réteg szerepe megszűnt: vagyonuktól megfosztották őket, börtönbe kerültek, sokan külföldre menekültek. Az értelmiségi családok gyermekei osztályidegenként hátrányba kerültek a továbbtanulásnál, míg a munkás- és parasztszármazású tanulók előnyt élveztek.</p>" },
+                { "title": "Három T, cenzúra", "detail": "<h1>Korlátozott szabadság</h1><p>A kulturális alkotásokat a „három T” (tilt, tűr, támogat) alapján Aczél György kultúrpolitikus cenzúrázta. Ennek jegyében az 1970-es években cenzúrázva, de működhettek beat zenekarok.</p>" }
+            ]
+        ] }
+    ]
+}
